@@ -32,7 +32,7 @@ You can run this Assembly language program in suitable environment and get the s
 
 ###  Some Notes
 
- 1.  I use the tool [Lex&Yacc]() to help me traslate regular expression and Context free grammar to a C++ program which help me a lot.
+ 1.  I use the tool [Parser Generator](http://parser-generator.updatestar.com/zh-cn) to help me traslate regular expression and Context free grammar to a C++ program which help me a lot.
 
 
  2.  I also add same  c complier(cminus,lcc,Tiny-C) in `/other-compliers/` which used to compare with me.
@@ -49,3 +49,12 @@ You can run this Assembly language program in suitable environment and get the s
 
 
 ---
+
+###  Appendix
+
+  1. The Lexical Structure ( regular expression ) [`c_complier/complier5/mylexer.l`](https://github.com/Nrgeup/c_complier/blob/master/complier5/mylexer.l)
+ 
+  2. The Grammatical structure ( Context free grammar ) [` c_complier/complier5/myparser.y`](https://github.com/Nrgeup/c_complier/blob/master/complier5/myparser.y)
+
+---
+
