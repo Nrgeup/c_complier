@@ -37,11 +37,11 @@ You can run this Assembly language program in suitable environment and get the s
 
  2.  I also add same  c complier(cminus,lcc,Tiny-C) in `/other-compliers/` which used to compare with me.
 
-     I think i am bettter than them, because i make same improvements :
+     I think I am bettter than them, because I make same improvements :
    >
-     - This program can translate more complex Grammatical structure such as `function struct`
+     - This program can translate more complex Grammatical structure such as `function structure`
 
-     - I used the Dynamic stack address allocation, so i can achieve same logic structure like `recursion`
+     - I used the Dynamic stack address allocation, so I can achieve same logic structure like `recursion`
 
 	 - I try to output the Assembly language program not directly run the C progrqam because it can transfer to other platforms easily.
 
