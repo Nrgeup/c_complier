@@ -1,0 +1,35 @@
+/*测试文件，测试递归功能*/
+int* partition(int* begin, int* end)
+{
+	if (end <= begin) return begin;
+	end = end - 1;
+	int mid = *begin;
+	while (begin < end)
+	{
+		while (begin < end && *end >= mid) end = end - 1; *begin = *end;
+		while (begin < end && *begin <= mid) begin = begin + 1; *end = *begin;
+	}
+	*begin = mid;
+	return begin;
+}
+void qsort(int* begin, int* end)
+{
+	if (end <= begin) return;
+	int* mid = partition(begin, end);
+	qsort(begin, mid);
+	qsort(mid+1, end);
+}
+int array[1024];
+int main()
+{
+	printf("input the size:");
+	int i, n; scanf("%d", &n);
+	printf(">>>>input %d  number:  \n",n);
+	for (i = 0; i < n; i = i + 1) scanf("%d", array + i);
+	qsort(array, array + n);
+	printf(">>>>sort %d  number:  \n",n);
+	for (i = 0; i < n; i = i + 1) printf("%d ", array[i]);
+	 printf("\n");
+	return 0;
+}
+

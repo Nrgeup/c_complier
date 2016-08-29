@@ -1,0 +1,23 @@
+/*测试文件，测试函数功能*/
+
+int sum(int x, int y){		/*求累计和*/
+	int ans=0,i=x;
+	while(i<=y)
+	{
+		ans=ans+i;
+		i=i+1;
+	}
+	return ans;
+}
+
+int main()
+{
+	int a,b,c;
+	printf("input the a:");
+	scanf("%d",&a);
+	printf("input the b:");
+	scanf("%d",&b);
+	c=sum(a,b);
+	printf("the sunm of a(%d) - b(%d) is: %d \n",a,b,c);
+	return 0;
+}

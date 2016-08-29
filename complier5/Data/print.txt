@@ -1,0 +1,52 @@
+function 
+    id main address: 00000000
+    define
+        id int
+        expr = type: int
+            id @00000000a type: int address: FFFFFFFC
+            number 0 type: int
+        expr = type: int
+            id @00000000b type: int address: FFFFFFF8
+            number 1 type: int
+        expr = type: int
+            id @00000000i type: int address: FFFFFFF4
+            number 1 type: int
+        id @00000000t type: int address: FFFFFFF0
+        id @00000000n type: int address: FFFFFFEC
+    expr () type: int
+        id scanf type: undefined address: 00000000
+        string @00000000 type: char[3]
+        expr & type: int*
+            id @00000000n type: int address: FFFFFFEC
+    expr () type: int
+        id printf type: undefined address: 00000000
+        string @00000001 type: char[4]
+        id @00000000a type: int address: FFFFFFFC
+    expr () type: int
+        id printf type: undefined address: 00000000
+        string @00000002 type: char[4]
+        id @00000000b type: int address: FFFFFFF8
+    while
+        expr < type: int
+            id @00000000i type: int address: FFFFFFF4
+            id @00000000n type: int address: FFFFFFEC
+        expr = type: int
+            id @00000000t type: int address: FFFFFFF0
+            id @00000000b type: int address: FFFFFFF8
+        expr = type: int
+            id @00000000b type: int address: FFFFFFF8
+            expr + type: int
+                id @00000000a type: int address: FFFFFFFC
+                id @00000000b type: int address: FFFFFFF8
+        expr () type: int
+            id printf type: undefined address: 00000000
+            string @00000003 type: char[4]
+            id @00000000b type: int address: FFFFFFF8
+        expr = type: int
+            id @00000000a type: int address: FFFFFFFC
+            id @00000000t type: int address: FFFFFFF0
+        expr = type: int
+            id @00000000i type: int address: FFFFFFF4
+            expr + type: int
+                id @00000000i type: int address: FFFFFFF4
+                number 1 type: int
